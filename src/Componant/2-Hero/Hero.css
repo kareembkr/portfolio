@@ -1,0 +1,78 @@
+/* ===============
+1. left section 
+================ */
+
+section.hero .parent-avatar {
+  align-items: end;
+  gap: 0.6rem;
+}
+
+section.hero .avatar {
+  width: 88px;
+  border-radius: 50%;
+  /* border: 1px solid rgba(134, 88, 4, 0.801); */
+  padding: 1px;
+  /* margin-right: 0.7px; */
+  /* box-shadow: 2px 2px 48px rgba(134, 88, 4, 0.801) inset; */
+}
+section.hero .icon-verified {
+  color: rgba(0, 0, 255, 0.767);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+section {
+  margin-top: 3rem;
+}
+section .left-section {
+  flex-grow: 1;
+}
+
+section .title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin: 24px 0;
+  color: var(--title);
+  max-width: 70%;
+  letter-spacing: -0.025em;
+}
+
+section .subtitle {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 25px;
+  max-width: 65%;
+}
+
+section .allicon {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+.animation {
+  width: 32rem;
+
+  translate: -20px 5px;
+}
+
+.icon-twitter:hover,
+.icon-linkedin:hover,
+.icon-github:hover,
+.icon-facebook:hover {
+  cursor: pointer;
+}
+section .allicon .icon-cancel:hover {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: white;
+}
+@media (max-width: 1000px){
+  .animation{
+display: none;
+  }
+}
+/* ==============================
+2. right section 
+===============================*/

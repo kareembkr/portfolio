@@ -1,0 +1,97 @@
+section span.icon-envelope {
+  color: var(--subtitle);
+  margin-right: 0.9rem;
+  font-size: 1.8rem;
+}
+section h1.home {
+  color: var(--title);
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+section p.subtitle {
+  color: var(--subtitle);
+  line-height: 1.65rem;
+  margin-bottom: 2rem;
+}
+section label {
+  color: var(--subtitle);
+}
+section.contact-as #email,
+section.contact-as #massege {
+  all: unset;
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63, 63, 70);
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  margin-left: 0.1rem;
+  border-radius: 5px;
+  
+}
+
+section.contact-as #massege {
+  margin-top: 24px;
+}
+
+section.contact-as #email:focus,
+section.contact-as #massege:focus {
+  border: 1px solid rgb(45, 212, 191);
+}
+section.contact-as #email:hover,
+section.contact-as #massege:hover {
+  border: 1px solid rgb(45, 212, 191);
+}
+section.contact-as #massege {
+  min-height: 9rem;
+  resize: vertical;
+}
+.light section.contact-as #email,
+.light section.contact-as #massege {
+  background-color:white;
+  color: black;
+
+}
+.light section.contact-as #email:focus,
+ .light section.contact-as #massege:focus {
+  border: 1px solid black;
+}
+.light section.contact-as #email:hover,
+.light section.contact-as #massege:hover {
+  border: 1px solid black;
+}
+.submit {
+  background: rgba(36, 37, 46, 1);
+  padding: 0.75rem 2rem;
+  font-size: 1.05rem;
+  border: 1px solid rgba(63, 63, 70);
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 1.8rem;
+}
+.submit:hover {
+  scale: 0.9;
+}
+@media (max-width: 1250px){
+  .contactus{
+display: none;
+  }
+}
+@media (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  form div.flex {
+    flex-direction: column;
+    align-items: start;
+    width: 85%;
+  }
+  section.contact-as #massege {
+    margin-top: 1px;
+  }
+  section .animation {
+    display: none;
+  }
+  .submit {
+    align-self: center;
+  }
+}

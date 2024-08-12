@@ -1,0 +1,198 @@
+/* =============
+ table of contents
+===============
+ 
+1.parent section
+2.left section
+3.right section 
+*/
+
+/* ============================
+     parent section 
+==============================*/
+
+main.flex {
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ============================
+     left section 
+==============================*/
+
+section.left-section.flex {
+  flex-direction: column;
+  gap: 10px;
+}
+section.left-section.flex button {
+  background: rgba(36, 37, 46, 1);
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.light .left-section.flex button {
+  background:black;
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+section.left-section.flex button.active {
+  opacity: 1;
+  font-weight: bold;
+
+  letter-spacing: 0.6px;
+  padding: 0.8rem 0;
+  border: 1px solid var(--blue);
+}
+.light section.left-section.flex button.active{
+  border: 1px solid black;
+  
+}
+section.left-section.flex button:hover {
+  opacity: 1;
+}
+
+/* ============================
+         right section 
+==============================*/
+section.right-section {
+  flex-grow: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 18px;
+  row-gap: 18px;
+}
+
+section article.card {
+  width: 290px;
+  background-image: linear-gradient(
+    rgba(255, 255, 2552, 0.05),
+    rgba(255, 255, 2552, 0.05)
+  );
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.light section article.card,.light section article.card:hover{
+  border: none;
+}
+
+section article.card:hover {
+  border: 1px solid var(--blue);
+  cursor: pointer;
+  rotate: 1deg;
+  scale: 1.01;
+}
+section article.card .imge {
+  width: 288px;
+  border-radius: 5px;
+}
+section article .box {
+  margin-left: 5.5px;
+}
+
+section article h1.title {
+  color: var(--title);
+  text-transform: capitalize;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+section article .box p.subtitle {
+  color: var(--subtitle);
+  font-size: 15px;
+  max-width: 288px;
+  margin-bottom: 1.1rem;
+}
+
+section article .icons {
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+.frist {
+  display: flex;
+  gap: 11px;
+}
+.icons .icon-link,
+.icons .icon-github {
+  /* background:red; */
+  font-size: 1.2rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+.icons .icon-link:hover,
+.icons .icon-github:hover {
+  /* background: red; */
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: white;
+}
+
+ .light .icons .icon-link:hover,
+.icons .icon-github:hover {
+  /* background: red; */
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: black;
+}
+.light .icons .icon-link:hover,
+.icons .icon-github:hover {
+  /* background: red; */
+  font-size: 1.25rem;
+  cursor: pointer;
+  color:bl;
+}
+.icons .link {
+  font-size: 0.9rem;
+  color: var(--blue);
+  margin-right: 12px;
+  cursor: pointer;
+}
+.icon-arrow-right {
+  margin-left: 5px;
+}
+@media (max-width:600px) {
+  main.flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+section.left-section.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 10px;
+}
+section.left-section.flex button {
+  width: 7rem;
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
+
+
+}
+}
+
+  /* section.left-section.flex {
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-self: center;
+  } */
+
+  /* section.left-section.flex button {
+    width: 7rem;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  } */
+
